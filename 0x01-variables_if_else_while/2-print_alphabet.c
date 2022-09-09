@@ -11,11 +11,15 @@
 int main(void)
 {
 	int x;
+	char c = '\n';
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
 	putchar(x);
 	}
+
+	if (x == 'z')
+		putchar(c);
 
 	return (0);
 
