@@ -18,8 +18,7 @@ int main(void)
 	putchar(x);
 	}
 
-	if (x == 'z')
-		putchar(c);
+	putchar('\n');
 
 	return (0);
 
