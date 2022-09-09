@@ -20,7 +20,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	k = &n;
-	l = (*k%10);
+	l = (*k % 10);
 
 	if (l > 5)
 	{
