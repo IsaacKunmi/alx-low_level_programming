@@ -11,7 +11,6 @@
 int main(void)
 {
 	int x;
-	char c = '\n';
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
