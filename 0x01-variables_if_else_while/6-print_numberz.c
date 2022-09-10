@@ -10,13 +10,12 @@
 
 int main(void)
 {
-	int x = 'a';
+	int x = 0;
 
-	while( x <= 'z' ) 
+	while (x <= 9)
 	{
-	if (x == 'e' || x == 'q')
-      putchar(x+1);
-      x++;
+	putchar(x + '0');
+	x++;
 	}
 
 
