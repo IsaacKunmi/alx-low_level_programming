@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry
+ * print_alphabet - Entry
  *
- * Description: Header files
+ * Description: alphabets in lowercase
  *
- * Return: Always 0 (success)
+ * Return: void
  */
+
 
 void print_alphabet(void)
 {
