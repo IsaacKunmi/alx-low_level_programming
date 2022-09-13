@@ -3,14 +3,13 @@
 /**
  * main - Entry
  *
- * Description: Using C Header files
+ * Description: Using C header files
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-
 	_putchar(95);
 	_putchar(112);
 	_putchar(117);
@@ -21,6 +20,5 @@ int main(void)
 	_putchar(114);
 	_putchar(10);
 
-	return(0);
-
+	return (0);
 }
