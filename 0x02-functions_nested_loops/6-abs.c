@@ -3,14 +3,13 @@
 /**
  *_abs - Entry
  *
- * @int - type int
+ * @n: int type number
  *
- * Return: Always 0 (success)
+ * Return: absolute value of @n
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n
 
 	if (n >= 0)
 	{
