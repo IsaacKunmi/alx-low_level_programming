@@ -12,6 +12,8 @@ int main(void)
 {
 	int x;
 
+	print_alphabet();
+
 	for (x = 97; x <= 122; x++)
 	{
 		_putchar(x);
