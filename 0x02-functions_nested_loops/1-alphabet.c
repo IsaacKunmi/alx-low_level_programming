@@ -8,11 +8,9 @@
  * Return: Always 0 (success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	int x;
-
-	print_alphabet();
 
 	for (x = 97; x <= 122; x++)
 	{
@@ -21,7 +19,7 @@ int main(void)
 
 	_putchar(10);
 
-	return (0);
+	return;
 
 }
 
