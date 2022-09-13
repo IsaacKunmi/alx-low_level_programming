@@ -1,14 +1,16 @@
-#include "main.h"
+#include "_putchar.c"
+
 /**
  * main - Entry
  *
- * Description: Using C
+ * Description: Using C Header files
  *
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
+
 	_putchar(95);
 	_putchar(112);
 	_putchar(117);
@@ -19,5 +21,6 @@ int main(void)
 	_putchar(114);
 	_putchar(10);
 
-	return (0);
+	return(0);
+
 }
