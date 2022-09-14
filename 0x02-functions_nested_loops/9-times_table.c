@@ -1,11 +1,10 @@
+)  538 Bytes
 #include "main.h"
-
 /**
- *times_table - print 9 times table
- *Return: times table
- *
+ * times_table - prints the 9 times table, starting with 0
+ * see the task example for formating
+ * Return: times table
  */
-
 void times_table(void)
 {
 	int r, c, d; /*row, column, digit*/
