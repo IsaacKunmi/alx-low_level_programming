@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * add - Entry
- *
- * @i: type int
- * @j: type int
- * Return: Sum of numbers
+ * add - adds two integers and returns the result
+ * @a: type int number 1
+ * @b: type int number 2
+ * Description: adds two numbers
+ * Return: Always (0).
  */
 
 int add(int i, int j)
