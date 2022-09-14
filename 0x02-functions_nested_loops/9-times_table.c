@@ -5,6 +5,7 @@
  *Return: times table
  *
  */
+
 void times_table(void)
 {
 	int r, c, d; /*row, column, digit*/
