@@ -5,20 +5,18 @@
  *Return: times table
  *
  */
-
 void times_table(void)
 {
-	int i, j, k;
+	int r, c, d; /*row, column, digit*/
 
-	for (i = 0; i <= 9; i++)
+	for (r = 0; r <= 9; r++)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-
-	for (j = 0; j <= 9; j++)
-	{
-		k = j * k;
+		for (c = 1; c <= 9; c++)
+		{
+			d = (r * c);
 		if ((d / 10) > 0)
 		{
 			_putchar((d / 10) + '0');
@@ -36,3 +34,4 @@ void times_table(void)
 	}
 		_putchar('\n');
 	}
+}
