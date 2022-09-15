@@ -2,22 +2,15 @@
 #include "main.h"
 
 /**
- *print_numbers - entry
- *Description: prints numbers 0 to 9
- *Return: void
+ *mul - entry
+ @a - int type
+ @b - int type
+ *Description: multiplies two integers
+ *Return: product of @a and @b
  */
 
-void print_numbers(void)
+int mul(int a, int b)
 {
-	int c;
-
-	for (c = 48; c <= 57; c++)
-	{
-		_putchar(c);
-	}
-
-	_putchar(10);
-
-	return;
+	return (a * b);
 
 }
