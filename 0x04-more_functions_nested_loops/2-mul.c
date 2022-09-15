@@ -3,8 +3,8 @@
 
 /**
  *mul - entry
- @a - int type
- @b - int type
+ *@a: int type
+ *@b: int type
  *Description: multiplies two integers
  *Return: product of @a and @b
  */
