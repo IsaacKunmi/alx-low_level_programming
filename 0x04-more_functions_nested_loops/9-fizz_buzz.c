@@ -9,34 +9,25 @@
 
 int main(void)
 {
-	int x;
+	int i;
 
-	for (x = 1; x <= 100; x++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (x % 3 == 0 && x % 5 == 0)
+		if (i % 3 == 0)
 		{
-			printf("FizzBuzz");
-			printf(" ");
-		}
-		else if	(x % 3 == 0)
+			printf(" Fizz");
+		} else if (i % 5 == 0)
 		{
-			printf("Fizz");
-			printf(" ");
-		}
-		else if (x % 5 == 0)
+			printf(" Buzz");
+		} else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("Buzz");
-			printf(" ");
+			printf(" FizzBuzz");
+		} else
+		{
+			printf(" %d", i);
 		}
-
-		else
-			printf("%d", x);
-			printf(" ");
-
 	}
-
 	printf("\n");
 
 	return (0);
-
 }
