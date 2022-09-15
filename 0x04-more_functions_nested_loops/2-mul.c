@@ -2,14 +2,22 @@
 #include "main.h"
 
 /**
- *mul - entry
- *@a: int type
- *@b: int type
- *Description: multiplies two numbers
- *Return: the product of @a and @b
+ *print_numbers - entry
+ *Description: prints numbers 0 to 9
+ *Return: void
  */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int c;
+
+	for (c = 48; c <= 57; c++)
+	{
+		_putchar(c);
+	}
+
+	_putchar(10);
+
+	return;
+
 }
