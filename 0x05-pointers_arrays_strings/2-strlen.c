@@ -5,19 +5,18 @@
  *
  * @s: char type
  *
- * Return: Always 0
+ * Return: integer
  */
 
 int _strlen(char *s)
 {
-	 char str[] = *s;
-	 int x, i = 0;
+	 int i, x = 0;
 
-	 for (x = 0; str[x] != '\0'; x++)
+	 for (i = 0; str[i] != '\0'; i++)
 	 {
-		 i++;
+		 x++
 	 }
 
-	 _putchar(i + '0');
+	 return(x);
 
 }
