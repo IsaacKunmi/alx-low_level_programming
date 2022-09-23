@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
 * _strncat -  concatenate two strings wit at most n bytes of src
 * @dest: char paramter pointer
