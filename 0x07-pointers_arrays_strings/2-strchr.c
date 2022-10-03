@@ -27,9 +27,9 @@ char *_strchr(char *s, char c)
 
 
 
-	if (*str == ch)
+	if (*s == c)
 	{
-		return (str);
+		return (s);
 	}
 
 	return (NULL);
