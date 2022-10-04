@@ -12,25 +12,18 @@
  * Return: number of bytes in s that has bytes from accept
  */
 
-char *_strpbrk(char *s, char *accept)
+char* _strpbrk(char *s, char *accept)
 {
-	unsigned int i = 0;
-
 	while (*s != '\0')
 	{
 		if (*s == *accept)
 		{
+			
 			return (s);
-			break;
+			
 		}
 
 		s++;
-	}
-
-
-	if (*s == *accept)
-	{
-		return (s);
 	}
 
 	return (NULL);
