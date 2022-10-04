@@ -3,7 +3,7 @@
 /**
  *_strpbrk - entry
  *
- * Description: searches a string for any of a set of bytes 
+ * Description: searches a string for any of a set of bytes
  *
  * @s: string to be scanned
  *
@@ -12,15 +12,14 @@
  * Return: number of bytes in s that has bytes from accept
  */
 
-char* _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
 		if (*s == *accept)
 		{
-			
+
 			return (s);
-			
 		}
 
 		s++;
