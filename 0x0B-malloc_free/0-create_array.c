@@ -26,6 +26,11 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
+	if (ar == NULL)
+	{
+		return (NULL);
+	}
+
 	i = 0;
 
 	while (i < n)
@@ -35,12 +40,5 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	ar[i] = '\0';
-
-
 	return (ar);
-
-
-
-
 }
