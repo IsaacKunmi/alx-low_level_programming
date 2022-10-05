@@ -15,8 +15,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, x, y, z;
-	int sum1 = 1;
-	int sum2 = 1;
 	char *ar;
 
 	if (s1 == NULL)
@@ -26,29 +24,24 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	for (i = 0; s1[i] != '\0'; i++)
-	{
-		sum1++;
-	}
+		;
 
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		sum2++;
-	}
+	for (x = 0; s2[x] != '\0'; x++)
+		;
 
-	ar = malloc((sum1 * sizeof(char)) + (sum2 * sizeof(char)) - 1);
+	ar = malloc((i * sizeof(char)) + (x * sizeof(char)) + 1);
 
 	if (ar == NULL)
 		return (NULL);
 
-	x = sum1 + sum2 - 1;
-
-	for (y = 0, z = 0; y < x; y++)
+	for (y = 0, z = 0; y < (i + x + 1); y++)
 	{
-		if (y <= sum1)
+		if (y <= i)
 			ar[y] = s1[y];
 
 		else
 			ar[y] = s2[z++];
 	}
+
 	return (ar);
 }
