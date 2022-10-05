@@ -32,7 +32,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	if (sum == NULL)
+	if (ar == NULL)
 	{
 		return (NULL);
 	}
