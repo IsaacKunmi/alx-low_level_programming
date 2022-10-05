@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 		sum2++;
 	}
 
-	ar = malloc((sum1 * sizeof(char)) + (sum2 * sizeof(char)));
+	ar = malloc((sum1 * sizeof(char)) + (sum2 * sizeof(char)) - 1);
 
 	if (ar == NULL)
 		return (NULL);
@@ -50,7 +50,7 @@ char *str_concat(char *s1, char *s2)
 			ar[y] = s1[y];
 
 		else
-			ar[y] = s2[z];
+			ar[y] = s2[z++];
 	}
 	return (ar);
 }
