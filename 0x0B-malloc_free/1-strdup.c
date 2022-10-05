@@ -15,7 +15,7 @@ char *_strdup(char *str)
 {
 	int n, i;
 
-	int sum = 0;
+	int sum = 1;
 
 	char *ar;
 
