@@ -25,8 +25,18 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
-	ar[0] = c;
+
+	int i = 0;
+
+	while (i < n)
+	{
+		arr[i] = c;
+
+		i++;
+	}
+
+	s[i] = '\0';
+
 
 	return (ar);
 
