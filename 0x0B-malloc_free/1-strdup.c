@@ -17,12 +17,13 @@ char *_strdup(char *str)
 
 	int sum = 0;
 
+	char *ar;
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		sum++;
 	}
 
-	char *ar;
 
 	ar = malloc(sum * sizeof(char));
 
