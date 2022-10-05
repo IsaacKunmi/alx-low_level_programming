@@ -14,9 +14,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, x;
-	int y;
-	int z = 0;
+	int i, x, y, z;
 	int sum1 = 1;
 	int sum2 = 1;
 	char *ar;
@@ -42,9 +40,9 @@ char *str_concat(char *s1, char *s2)
 	if (ar == NULL)
 		return (NULL);
 
-	x = sum1 + sum2;
+	x = sum1 + sum2 - 1;
 
-	for (y = 0; y < x; y++)
+	for (y = 0, z = 0; y < x; y++)
 	{
 		if (y <= sum1)
 			ar[y] = s1[y];
