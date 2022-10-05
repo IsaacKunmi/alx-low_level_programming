@@ -14,10 +14,11 @@
 char *_strdup(char *str)
 {
 	int n, i;
-
 	int sum = 1;
-
 	char *ar;
+
+	if (str == NULL)
+		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -27,15 +28,8 @@ char *_strdup(char *str)
 
 	ar = malloc(sum * sizeof(char));
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-
 	if (ar == NULL)
-	{
 		return (NULL);
-	}
 
 	n = 0;
 
