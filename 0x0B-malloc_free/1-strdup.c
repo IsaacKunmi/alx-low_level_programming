@@ -32,6 +32,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (sum == NULL)
+	{
+		return (NULL);
+	}
 
 	n = 0;
 
