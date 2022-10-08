@@ -1,42 +1,53 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- *_strspn - entry
+ *_strstr - entry
  *
- * Description: gets the length of a prefix substring
+ * Description: locates a substring
  *
- * @s: string to check
+ * @haystack: string to check
  *
- * @accept: input string
+ * @needle: substring to find
  *
- * Return: number od bytes in sthat has bytes from accept
+ * Return: char
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int i, j, count = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	int i, j, c;
+
+	i = 0;
+	c = 0;
+	while (haystack[i] != '\0')
 	{
-		if (count != i) break;
-		for (j = 0; accept[j] != '\0'; j++)
+		j = 0;
+		while (needle[j + c] == haystack[i + c])
 		{
-			if (s[i] == accept[j])
-				count++;
+			if (haystack[i + j] != needle[j])
+				break;
+			c++;
 		}
+
+	if (needle[j + c] == '\0')
+		return (&haystack[i]);
+
+	j++;
+	i++;
 	}
 
-	return (count);
 
+	return (NULL);
 }
 
 int main(void)
 {
 	char *s = "hello, world";
-	char *f = "oleh";
-	unsigned int n;
+	char *f = "world";
+	char *t;
 
-	n = _strspn(s, f);
-	printf("%u\n", n);
+	t = _strstr(s, f);
+	printf("%s\n", t);
 	return (0);
 }
