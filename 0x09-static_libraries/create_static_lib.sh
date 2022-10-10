@@ -1,4 +1,4 @@
-#!/bin bash
+#!/bin/bash
 
 gcc -Wall -Werror -Wextra -pendatic -std=gnu89 -c *.c
 
