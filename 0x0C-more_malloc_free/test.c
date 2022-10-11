@@ -1,14 +1,13 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 /**
- *_calloc - allocates memory for an array
- *@nmemb: elemements in array
- *@size: byte size of elements
- *Return: void
+ *array_range - function creates an array of integers
+ *@min: minimum number in array
+ *@max: maximum number of array
+ *Return: array of integers
  */
 
-void simple_print_buffer(char *buffer, unsigned int size)
+void simple_print_buffer(int *buffer, unsigned int size)
 {
 	unsigned int i;
 
@@ -19,37 +18,39 @@ void simple_print_buffer(char *buffer, unsigned int size)
 		{
 			printf(" ");
 		}
-	if (!(i % 10) && i)
-	{
-		printf("\n");
-	}
-	printf("0x%02x", buffer[i]);
-	i++;
+		if (!(i % 10) && i)
+		{
+			printf("\n");
+		}
+		printf("0x%02x", buffer[i]);
+		i++;
 	}
 	printf("\n");
-
 }
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	void *a;
 
-	a = calloc(nmemb, sizeof(size));
-		
-		return (a);
+int *array_range(int min, int max)
+{
+	int *a;
+	int c, size;
+
+	size = (max - min) + 1; 
+	printf("%d\n", size);
+	a = malloc(size * sizeof(int));
+
+	for (c = 0; c <= size; c++)
+	{
+		a[c] = min++;
+	}
+
+	return (a);
 }
 
 int main(void)
 {
-	char *a;
+	int *a;
 
-	a = _calloc(98, sizeof(char));
-	strcpy(a, "Best");
-	strcpy(a + 4, "School! :)\n");
-	a[97] = '!';
-
-	simple_print_buffer(a, 98);
-
+	a = array_range(0, 10);
+	simple_print_buffer(a, 11);
 	free(a);
-
 	return (0);
 }
