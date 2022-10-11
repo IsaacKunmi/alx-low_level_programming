@@ -11,7 +11,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *a;
 
-	a = calloc(size, sizeof(nmemb));
+	a = calloc(nmemb, sizeof(size));
 		
 		return (a);
 }
