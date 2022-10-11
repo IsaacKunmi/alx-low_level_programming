@@ -1,14 +1,19 @@
+#ifndef DOG_H
+#define DOOG_H
+
 /**
- *struct dog - entry
- *@name: first member
- *@age: second member
- *@owner: third member
+ *struct dog - structure definition of a dog
+ *@name: character string
+ *@age: integer
+ *@owner: character string
  *
  */
 
 struct dog
 {
 	char * name;
-	float * age;
+	float age;
 	char * owner;
 }
+
+#endif
