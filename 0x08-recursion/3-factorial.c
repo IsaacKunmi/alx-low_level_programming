@@ -5,7 +5,7 @@
  *Return: the factorial number
  */
 
-int factorial (int n)
+int factorial(int n)
 {
 	if (n <= 1 && n > 0)
 		return  (1);
