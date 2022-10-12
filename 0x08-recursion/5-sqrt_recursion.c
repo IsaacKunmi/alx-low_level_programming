@@ -22,7 +22,7 @@ int get_square(int c, int i)
 {
 	int square;
 
-	squre = i * i;
+	square = i * i;
 	if (square == c)
 		return (i);
 	else if (square < c)
