@@ -21,7 +21,7 @@ int main(void)
 		j += i;
 		i = k;
 
-		j++;
+
 	}
 
 	printf("%d\n", total);
