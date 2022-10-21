@@ -13,7 +13,7 @@ int main(void)
 	for (i = 0; i < 100; i++)
 	{
 		a = i / 10; /*tens first num */
-		b - i % 10; /*units first num */
+		b = i % 10; /*units first num */
 
 		for (j = 0; j < 100; j++)
 		{
