@@ -14,9 +14,9 @@ int main(void)
 {
 char print[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	int length = strlen(print);
+int length = strlen(print);
 
-	write(2, print, length);
+write(2, print, length);
 
-	return (1);
+return (1);
 }
