@@ -14,7 +14,7 @@ int main(void)
 	while (c < 100)
 	{
 		a = c % 10; /* signles digit */
-		b = c/10;  /* doubles digit */
+		b = c / 10;  /* doubles digit */
 
 		if (b < a)
 		{
@@ -36,6 +36,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-				
-
-
