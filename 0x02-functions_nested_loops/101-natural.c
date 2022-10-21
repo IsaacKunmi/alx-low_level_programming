@@ -16,7 +16,7 @@ int main(void)
 		if (a % 3 == 0)
 		{
 			sum += a;
-		} else if (a % 5)
+		} else if (a % 5 == 0)
 		{
 			sum += a;
 		}
