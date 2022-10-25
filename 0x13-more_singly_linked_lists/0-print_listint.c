@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * listint_len - function to print number of elements
- * Description: prints number of elements in a listint_t list
+ * print_listint - function to print elements
+ * Description: prints elements in a listint_t list
  * @h: pointer to struct
  * Return: number of elements
  */
 
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t count = 0;
 
