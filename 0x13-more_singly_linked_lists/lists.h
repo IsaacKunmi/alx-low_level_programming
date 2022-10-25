@@ -12,13 +12,13 @@
  * Description: singly linked list node structure
  */
 
-typedef struct listinst_s
+typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
 } listint_t;
 
-_putchar(char c);
+int _putchar(char c);
 size_t print_listint(const listint_t *h);
 
 #endif
