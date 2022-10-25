@@ -4,8 +4,8 @@
  * add_nodeint - function adds a new node
  * Description: adds a new node at the beginning of a listint_t list
  * @n: node number
- * @head: pointer to  struct
- * Return: address of new element
+ * @head: first node of list
+ * Return: address of new element, NULL if failed
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
