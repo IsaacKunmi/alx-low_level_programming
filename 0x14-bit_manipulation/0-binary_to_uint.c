@@ -13,6 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	int j, k, l;
 	int m = 0, sum = 0;
 
+	if (b == NULL)
+		return (0);
+
 	for (c = 0; b[c]; c++)
 	{
 		if (b[c] != '0' && b[c] != '1')
@@ -26,7 +29,7 @@ unsigned int binary_to_uint(const char *b)
 		a /= 10;
 		m++;
 		sum += l;
-		}
+
 	}
 
 	return (sum);
