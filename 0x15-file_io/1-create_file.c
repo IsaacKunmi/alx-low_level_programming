@@ -10,7 +10,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int a, b;
+	int a, b, c;
 
 	if (!filename)
 		return (-1);
@@ -23,7 +23,10 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	b = write(a, text_content, sizeof(text_content));
+	for (c = 0; text_content[c] != '\0'; c++)
+		;
+
+	b = write(a, text_content, c);
 
 	if (b == -1)
 		return (-1);
