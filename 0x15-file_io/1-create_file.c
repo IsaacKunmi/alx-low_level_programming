@@ -23,9 +23,10 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	b = read(a, text_content, sizeof(text_content));
+	b = write(a, text_content, sizeof(text_content));
 
-	write(a, text_content, b);
+	if (b == -1)
+		return (-1);
 
 	close(a);
 
