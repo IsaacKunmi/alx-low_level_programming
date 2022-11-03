@@ -12,16 +12,17 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	char buffer[1000];
+	int a, b;
+
 	if (filename == NULL)
 		return (0);
 
-	char buffer[letters];
+	a = open(filename, O_RDONLY);
 
-	int a = open(filename, O_RDONLY);
+	b = read(a, buffer, letters);
 
-	int b = read(a, buffer, letters);
-
-	write(1, buffer, b);
+	write(STDOUT_FILENO, buffer, b);
 
 	return (a);
 }
